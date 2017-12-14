@@ -1,0 +1,41 @@
+/* general css */
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background:#092B40;
+    color:white;
+}
+
+/* app title */
+.app-title{
+    margin-top:20px;
+}
+
+.app-title h1, .app-title p{
+    text-align:center;
+}
+
+/* search box */
+.search-box{
+    margin-top:20px;
+}
+
+/* random article */
+.rand-article{
+    color:lightblue;
+    margin-top:10px;
+    text-align:center;
+    text-transform:lowercase;
+}
+
+.rand-article a{
+    color:chartreuse;
+}
+
+.rand-article a:hover{
+    color:lightslategray;
+    text-decoration:none;
+}

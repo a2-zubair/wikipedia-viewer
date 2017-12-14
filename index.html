@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wikipedia Viewer</title>
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- app title -->
+            <div class="col-md-12 app-title">
+                <h1>Wikipedia Viewer</h1>
+                <p>a wikipedia search engine app</p>
+            </div>
+            <!-- end app title -->
+        </div>
+        <div class="row">
+            <!-- wiki search box -->
+            <div class="col-md-6 offset-md-3 search-box">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="search-text" placeholder="Search for..." aria-leble="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" id="search" type="button">Search</button>
+                    </span>
+                </div>
+                <p class="rand-article">Read random <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">article</a>.</p>
+            </div>
+            <!-- end wiki search box -->
+        </div>
+        <div class="row">
+            <!-- show wiki search results -->
+            <div class="col-md-12">
+                <ul id="results"></ul>
+            </div>
+            <!-- end show wiki search results -->
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
