@@ -24,9 +24,9 @@
             <!-- wiki search box -->
             <div class="col-md-6 offset-md-3 search-box">
                 <div class="input-group">
-                    <input type="text" class="form-control" id="search-text" placeholder="Search for..." aria-leble="Search for...">
+                    <input type="text" class="form-control" id="searchText" placeholder="Search for..." aria-leble="Search for...">
                     <span class="input-group-btn">
-                        <button class="btn btn-primary" id="search" type="button">Search</button>
+                        <button class="btn btn-primary" id="searchBtn" type="button">Search</button>
                     </span>
                 </div>
                 <p class="rand-article">Read random <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">article</a>.</p>
@@ -36,9 +36,12 @@
         <div class="row">
             <!-- show wiki search results -->
             <div class="col-md-12">
-                <ul id="results"></ul>
+                <ul id="result"></ul>
             </div>
             <!-- end show wiki search results -->
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="footer"></div>
         </div>
     </div>
     <!-- scripts -->

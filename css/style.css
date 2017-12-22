@@ -9,6 +9,10 @@ body{
     color:white;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 /* app title */
 .app-title{
     margin-top:20px;
@@ -38,4 +42,25 @@ body{
 .rand-article a:hover{
     color:lightslategray;
     text-decoration:none;
+}
+
+/* result */
+#result{
+    margin-top:20px;    
+}
+
+.result-box{
+    padding:10px 20px;
+    margin-bottom: 10px;
+    background-color:#030d13;
+    list-style: none;
+}
+
+/* footer */
+#footer{
+    margin:10px 0;
+}
+
+.footer-text{
+    text-align: center;
 }
