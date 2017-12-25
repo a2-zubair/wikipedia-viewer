@@ -9,18 +9,8 @@ $(document).ready(function(){
             url:apiUrl,
             async:"flase",
             dataType:"json",
-            success: function(wikiData){
-                $("#result, #footer").empty();
-                for(var i = 0; i < wikiData[1].length; i++){
-                    $("#result").append(
-                        "<li class='result-box'>"+
-                        "<h3>"+wikiData[1][i]+"</h3>"+
-                        "<p>"+wikiData[2][i]+"</p>"+
-                        "<a href="+wikiData[3][i]+" target='_blank'>Read More</a>"+
-                        "</li>"
-                    );
-                }
-                $("#footer").append("<div class='footer-text'>copyright &copy; 2017. Design and Develope by <a href='https://codepen.io/a2-zubair'>Zubair</a>.</div>");
+            success: function(data){
+                getWikiData(data);                
             },
             cache:false,
             error: function(errorWiki){
@@ -28,4 +18,20 @@ $(document).ready(function(){
             }
         });
     });
+
+    // get wikidata and process the data
+    function getWikiData(wikiData){
+        $("#result").empty();
+        for(var i = 0; i < wikiData[1].length; i++){
+            $("#result").append(
+                "<li class='result-box'>"+
+                "<h3>"+wikiData[1][i]+"</h3>"+
+                "<p>"+wikiData[2][i]+"</p>"+
+                "<a href="+wikiData[3][i]+" target='_blank'>Read More</a>"+
+                "</li>"
+            );
+        }
+    }
+
+    $("#footer").append("<div class='footer-text'>copyright &copy; 2017. Design and Develope by <a href='https://codepen.io/a2-zubair'>Zubair</a>.</div>");
 });
