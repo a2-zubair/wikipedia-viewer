@@ -33,5 +33,5 @@ $(document).ready(function(){
         }
     }
     // footer
-    $("#footer").append("<div class='footer-text'>copyright &copy; 2017. Design and Develope by <a href='https://codepen.io/a2-zubair'>Zubair</a>.</div>");
+    $("#footer").append("<div class='footer-text'>copyright &copy; 2017. Design and Develop by <a href='https://codepen.io/a2-zubair'>Zubair</a>.</div>");
 });
